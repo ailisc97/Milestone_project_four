@@ -9,8 +9,8 @@
     "pk": 2,
     "model": "products.category",
     "fields": {
-        "name": "bed_bath",
-        "friendly_name": "Bed & Bath"
+        "name": "laneswim",
+        "friendly_name": "Lane Swimming"
     }
 }, {
     "pk": 3,
@@ -30,22 +30,22 @@
     "pk": 5,
     "model": "products.category",
     "fields": {
-        "name": "essentials",
-        "friendly_name": "Essentials"
+        "name": "yoga",
+        "friendly_name": "Yoga"
     }
 }, {
     "pk": 6,
     "model": "products.category",
     "fields": {
-        "name": "jeans",
-        "friendly_name": "Jeans"
+        "name": "exerciseequip",
+        "friendly_name": "Exercise Equipment"
     }
 }, {
     "pk": 7,
     "model": "products.category",
     "fields": {
-        "name": "kitchen_dining",
-        "friendly_name": "Kitchen & Dining"
+        "name": "waterpolo",
+        "friendly_name": "Water Polo"
     }
 }, {
     "pk": 8,
@@ -58,7 +58,24 @@
     "pk": 9,
     "model": "products.category",
     "fields": {
-        "name": "shirts",
-        "friendly_name": "Shirts"
+        "name": "accessories",
+        "friendly_name": "Accessories"
+    }
+    
+},
+{
+    "pk": 10,
+    "model": "products.category",
+    "fields": {
+        "name": "pilates",
+        "friendly_name": "Pilates"
+    }
+},
+{
+    "pk": 11,
+    "model": "products.category",
+    "fields": {
+        "name": "kickbox",
+        "friendly_name": "Kick Boxing"
     }
 }]

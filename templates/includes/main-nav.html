@@ -5,22 +5,32 @@
                 Classes
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="classes-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Yoga</a>
-                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">Pilates</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">Kick Boxing</a>
+                <a href="{% url 'products' %}?sort=price&direction=yoga" class="dropdown-item">Yoga</a>
+                <a href="{% url 'products' %}?sort=rating&direction=pilates" class="dropdown-item ">Pilates</a>
+                <a href="{% url 'products' %}?sort=category&direction=kickbox" class="dropdown-item ">Kick Boxing</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Classes</a>
             </div>
         </li>
+        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="classes-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            All Products
+        </a>
+        <div class="dropdown-menu border-0" aria-labelledby="classes-link">
+            <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+            <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+            <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+            <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+        </div>
+    </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Clothing
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=activewear,essentials" class="dropdown-item">Activewear</a>
-                <a href="{% url 'products' %}?category=jeans" class="dropdown-item">Exercise Equipment</a>
-                <a href="{% url 'products' %}?category=shirts" class="dropdown-item">Accessories</a>
-                <a href="{% url 'products' %}?category=activewear,essentials,jeans,shirts" class="dropdown-item">All Clothing</a>
+                <a href="{% url 'products' %}?category=activewear" class="dropdown-item">Activewear</a>
+                <a href="{% url 'products' %}?category=exerciseequip" class="dropdown-item">Exercise Equipment</a>
+                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
+                <a href="{% url 'products' %}?category=activewear,exercisequip,accessories" class="dropdown-item">All Clothing</a>
             </div>
         </li>
 
@@ -29,9 +39,9 @@
                 Swimming
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="swimming-link">
-                <a href="{% url 'products' %}?category=bed_bath" class="dropdown-item">Lane Swimming</a>
-                <a href="{% url 'products' %}?category=kitchen_dining" class="dropdown-item">Water Polo</a>
-                <a href="{% url 'products' %}?category=bed_bath,kitchen_dining" class="dropdown-item">Water Volleyball </a>
+                <a href="{% url 'products' %}?category=laneswim" class="dropdown-item">Lane Swimming</a>
+                <a href="{% url 'products' %}?category=waterpolo" class="dropdown-item">Water Polo</a>
+                <a href="{% url 'products' %}?category=watervolley" class="dropdown-item">Water Volleyball </a>
             </div>
         </li>
 
