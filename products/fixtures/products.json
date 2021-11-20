@@ -429,7 +429,7 @@
     }
 },
 {
-    "pk": 26,
+    "pk": 32,
     "model": "products.product",
     "fields": {
         "sku": "pp5001730010",
@@ -443,7 +443,7 @@
     }
 },
 {
-    "pk": 26,
+    "pk": 33,
     "model": "products.product",
     "fields": {
         "sku": "pp5001730010",
@@ -457,7 +457,7 @@
     }
 },
 {
-    "pk": 26,
+    "pk": 34,
     "model": "products.product",
     "fields": {
         "sku": "pp5001730010",
@@ -471,7 +471,7 @@
     }
 },
 {
-    "pk": 26,
+    "pk": 35,
     "model": "products.product",
     "fields": {
         "sku": "pp5001730010",
@@ -485,7 +485,7 @@
     }
 },
 {
-    "pk": 26,
+    "pk": 36,
     "model": "products.product",
     "fields": {
         "sku": "pp5001730010",
@@ -499,7 +499,7 @@
     }
 },
 {
-    "pk": 26,
+    "pk": 37,
     "model": "products.product",
     "fields": {
         "sku": "pp5001730010",
@@ -513,7 +513,7 @@
     }
 },
 {
-    "pk": 26,
+    "pk": 38,
     "model": "products.product",
     "fields": {
         "sku": "pp5001730010",
@@ -527,7 +527,7 @@
     }
 },
 {
-    "pk": 26,
+    "pk": 39,
     "model": "products.product",
     "fields": {
         "sku": "pp5001730010",
@@ -541,7 +541,7 @@
     }
 },
 {
-    "pk": 26,
+    "pk": 40,
     "model": "products.product",
     "fields": {
         "sku": "pp5001730010",
