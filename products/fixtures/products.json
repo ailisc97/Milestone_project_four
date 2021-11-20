@@ -414,4 +414,143 @@
         "image": "equipment14.jpg"
     }
 },
+{
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Core for beginners",
+        "description": "This is core for beginners, on your way to a six pack.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "core2.jpg"
+    }
+},
+{
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Core for intermediate",
+        "description": "Woking on abs and obliques.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "core3.jpg"
+    }
+},
+{
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Core Advanced",
+        "description": "This is the final class in the core series.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "core.jpg"
+    }
+},
+{
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Black Workout top for Men",
+        "description": "Comfortable Back Workout top for men",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "clothes1.jpg"
+    }
+},
+{
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Mens Runners",
+        "description": "These are the best runners in the gym.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "clothes2.jpg"
+    }
+},
+{
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Womens basic top set",
+        "description": "This has a set of tops in basic colours.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "clothes3.jpg"
+    }
+},
+{
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Arm workout",
+        "description": "This is for people to get a great workout done",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "armworkoutman.jpg"
+    }
+},
+{
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Apple Watch Series 1",
+        "description": "This is one of the best workout watches going.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "accessories.jpg"
+    }
+},
+{
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Apple Watch Series 2",
+        "description": "This is one of the best workout watches going, sleep feature has been added to this model.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "accessories2.jpg"
+    }
+},
+{
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Apple Watch Series 3",
+        "description": "This is the best watch for workouts in the gym and at home, stress monitoring included.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "accessories3.jpg"
+    }
 }]
