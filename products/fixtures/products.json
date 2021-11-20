@@ -3,13 +3,13 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340155",
-        "name": "Yoga for beginners",
-        "description": "This class isnt too hard, great for beginners and will help tone your core",
+        "name": "Outdoor Yoga ",
+        "description": "Get into nature and do some yoga in the forest, beach and the fields.",
         "price": 53.99,
         "category": 6,
         "rating": 4.6,
-        "image_url": "media/yoga2.jpg",
-        "image": "yoga2.jpg"
+        "image_url": "media/yogaoutdoor.jpg",
+        "image": "yogaoutdoor.jpg"
     }
 }, {
     "pk": 2,
@@ -22,18 +22,396 @@
         "category": 4,
         "rating": 4.6,
         "image_url": "",
-        "image": "yoga3.jpg"
+        "image": "yogapro.jpg"
     }
 }, {
     "pk": 3,
     "model": "products.product",
     "fields": {
         "sku": "pp5001730010",
-        "name": "Kickboxing for beginners",
-        "description": "Want to learn Kick Boxing, well now is your chance, on every morning at 10am",
+        "name": "Seaside Yoga",
+        "description": "Seaside Yoga is the best way to get fully relaxed.",
         "price": 205.99,
         "category": 2,
         "rating": 4.7,
         "image_url": "",
-        "image": "Kickbox.jpg"
-}}]
+        "image": "yogasea.jpg"
+    }
+}, {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Womans Yoga",
+        "description": "Yoga focusing on areas that women need to work on.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "yogawoman.jpg"
+    }
+}, {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Weightlifing for Women",
+        "description": "This is a class suitable for women who love weightlifting, you choose the weights.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "weightwoman.jpg"
+    }
+},
+{
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Weightlifting for Men",
+        "description": "This is a class suitable for men who love weightlifting, you choose the weights.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "weightball.jpg"
+    }
+},
+{
+"pk": 7,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Weighted Rope",
+        "description": "This is a great online class for people in the gym with weighted ropes, you choose the weight",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "rope.jpg"
+    }
+},
+{
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Stretching for Professionals",
+        "description": "This is for people who are professional athletes.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "stretchpro.jpg"
+    }
+},
+{
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Stretching",
+        "description": "This is for people who go to the gym regulary.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "stretch.jpg"
+    }
+},
+{
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Running for a marathon",
+        "description": "This is for people who want to run a marathon, every class goes up by 2km.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "runningtrack.jpg"
+    }
+},
+{
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Kickboxing for Women Beginners",
+        "description": "This is for women learning how to kickbox",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "KickboxProGirl.jpg"
+    }
+},
+{
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Kickboxing for Men Beginners",
+        "description": "This is for men learning how to kickbox.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "Kickboxmen.jpg"
+    }
+},
+{
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Kickboxing for Professionals",
+        "description": "This is for people who want to be a professional at kickboxing .",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "KickboxPro.jpg"
+    }
+},
+{
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Kickboxing Intermediate",
+        "description": "This is for people who have complated the Kickboxing for men/women Beginners.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "Kickboxgirl.jpg"
+    }
+},
+{
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Kickboxing Advanced",
+        "description": "This is for people who have completed Kickboxing Intermediate",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "Kickboxboy.jpg"
+    }
+},
+{
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Running for a marathon (group)",
+        "description": "This is for people who want to complete a marathon in a team, you will be added to a whatapp group with people in your county and you will compete in marathons around Ireland. Every week the distance goes up by 2km.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "grouprunning.jpg"
+    }
+},
+{
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Weights for Advanced",
+        "description": "This is for people who want advanced weights at home",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "equipment2.jpg"
+    }
+},
+{
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Weights for Athletes",
+        "description": "This is for people who want professional weights at home",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "equipment.jpg"
+    }
+},
+{
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Weights for Beginners",
+        "description": "This is for people who want beginner weights at home",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "equipment3.jpg"
+    }
+},
+{
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Ropes for Beginners",
+        "description": "This is for people who want beginner ropes at home",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "equipment4.jpg"
+    }
+},
+{
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Kettlebells for Beginners",
+        "description": "This is for people who want beginner kettlebells at home",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "equipment5.jpg"
+    }
+},
+{
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Bar Weights for Professionals",
+        "description": "This is for people who want  bar professional weights at home",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "equipment6.jpg"
+    }
+},
+{
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Weights for Professionals",
+        "description": "This is for people who want professional weights at home",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "equipment7.jpg"
+    }
+},
+{
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Womens Beginner Set",
+        "description": "This included clothes, light weights, waterbottle, skipping rope and comfortable runners.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "equipment8.jpg"
+    }
+},
+{
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Outdoor Equipment",
+        "description": "This is for people who want to exercise at home.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "equipment9.jpg"
+    }
+},
+{
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Mens Beginner Set",
+        "description": "This included clothes, light weights, whey protein, skipping rope and comfortable runners.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "equipment10.jpg"
+    }
+},
+{
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Gym Ball",
+        "description": "This a gym ball, suitable for yoga and pilates",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "equipment11.jpg"
+    }
+},
+{
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Machines at home",
+        "description": "This is a treadmill great for walking and running.",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "equipment12.jpg"
+    }
+},
+{
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Starter set",
+        "description": "This is very light weights for low impact workouts",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "equipment13.jpg"
+    }
+},
+{
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Weight plates",
+        "description": "This includes a set of weight plates with 25lb, 35lb and 45lb",
+        "price": 205.99,
+        "category": 2,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "equipment14.jpg"
+    }
+},
+}]
