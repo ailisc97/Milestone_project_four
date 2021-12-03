@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import dj_database_url
 
 from django.contrib import admin
 
@@ -132,7 +133,10 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
+# DATABASES = {
+#     'default': dj_database_url.parse('postgres://sycjuqmgyxujsg:77778b451d832e90ae6b4f7d1ab72b16695f466a710cbb0e7a5e5b7727a5a11f@ec2-54-155-92-75.eu-west-1.compute.amazonaws.com:5432/d8phs4uv398bc7')
+    
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
