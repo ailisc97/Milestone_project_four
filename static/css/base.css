@@ -9,6 +9,10 @@ body {
     color: #555;
     font-family: 'Lato';
 }
+/*blog*/
+.card{
+    box-shadow: 0 16px 48px #E3E7EB;
+}
 
 /* from Bulma */
 .icon {
