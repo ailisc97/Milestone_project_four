@@ -5,9 +5,9 @@
                 Classes
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="classes-link">
-                <a href="{% url 'products' %}?sort=price&direction=yoga" class="dropdown-item">Yoga</a>
-                <a href="{% url 'products' %}?sort=rating&direction=pilates" class="dropdown-item ">Pilates</a>
-                <a href="{% url 'products' %}?sort=category&direction=kickbox" class="dropdown-item ">Kick Boxing</a>
+                <a href="{% url 'products' %}?category=yoga" class="dropdown-item">Yoga</a>
+                <a href="{% url 'products' %}?category=pilates" class="dropdown-item ">Pilates</a>
+                <a href="{% url 'products' %}?category=kickbox" class="dropdown-item ">Kick Boxing</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Classes</a>
             </div>
         </li>
