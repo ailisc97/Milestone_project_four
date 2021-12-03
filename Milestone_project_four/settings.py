@@ -64,11 +64,14 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'Milestone_project_four.urls'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 TEMPLATES = [
     {
@@ -190,3 +193,7 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'curranfitness@example.com'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# STATIC_ROOT = BASE_DIR / 'staticfiles'
+# STATIC_HOST = os.environ.get('DJANGO_STATIC_HOST', '')
+# STATIC_URL = STATIC_HOST + '/static/'
