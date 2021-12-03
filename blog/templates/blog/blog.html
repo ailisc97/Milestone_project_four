@@ -19,7 +19,7 @@
 <header class="masthead">
     <div class="overlay"></div>
     <div class="container">
-        <div class="row">
+        <div class="row lowered">
             <div class=" col-md-8 col-md-10 mx-auto">
                 <div class="site-heading">
                     <h3 class=" site-heading my-4 mt-3 text-white"> Welcome to my awesome Blog </h3>
@@ -34,7 +34,7 @@
     <div class="row">
         <!-- Blog Entries Column -->
         <div class="col-md-8 mt-3 left">
-            {% for post in post_list %}
+            {% for post in posts %}
             <div class="card mb-4">
                 <div class="card-body">
                     <h2 class="card-title">{{ post.title }}</h2>
@@ -45,7 +45,7 @@
             </div>
             {% endfor %}
         </div>
-        {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+    
     </div>
 </div>
 {%endblock%}
