@@ -8,8 +8,8 @@
         "price": 53.99,
         "category": 6,
         "rating": 4.6,
-        "image_url": "media/yogaoutdoor.jpg",
-        "image": "yogaoutdoor.jpg"
+        "image_url": "static/images/yogaoutdoor.jpg",
+        "image": "/static/images/yogaoutdoor.jpg"
     }
 }, {
     "pk": 2,
@@ -22,7 +22,7 @@
         "category": 4,
         "rating": 4.6,
         "image_url": "",
-        "image": "yogapro.jpg"
+        "image": "/static/images/yogapro.jpg"
     }
 }, {
     "pk": 3,
@@ -35,7 +35,7 @@
         "category": 2,
         "rating": 4.7,
         "image_url": "",
-        "image": "yogasea.jpg"
+        "image": "/static/images/yogasea.jpg"
     }
 }, {
     "pk": 4,
@@ -48,7 +48,7 @@
         "category": 2,
         "rating": 4.7,
         "image_url": "",
-        "image": "yogawoman.jpg"
+        "image": "/static/images/yogawoman.jpg"
     }
 }, {
     "pk": 5,
