@@ -8,8 +8,8 @@
         "price": 53.99,
         "category": 6,
         "rating": 4.6,
-        "image_url": "static/images/yogaoutdoor.jpg",
-        "image": "static/images/yogaoutdoor.jpg"
+        "image_url": "/static/images/yogaoutdoor.jpg",
+        "image": "/static/images/yogaoutdoor.jpg"
     }
 }, {
     "pk": 2,
