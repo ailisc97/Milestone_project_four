@@ -196,6 +196,12 @@ DEFAULT_FROM_EMAIL = 'curranfitness@example.com'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# cloudinary.config( 
+#   cloud_name = "dsdpkjda1", 
+#   api_key = "227883592642692", 
+#   api_secret = "WcNS1ic3LXZ1pPqreQe8gTkjpeo" 
+# )
+
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'alioxox996@gmail.com'
