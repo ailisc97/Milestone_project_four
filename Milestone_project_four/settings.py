@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', ')a*#2pw9y-3!hf)vo&(x=#63_%j-+qs-gydj8
 # DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = True
 
-ALLOWED_HOSTS = ['ailisc97-milestone-projectsfour', 'localhost', 'ailisc97-milestone-projectsfour.herokuapp.com']
+ALLOWED_HOSTS = ['ailisc97-milestone-projectfour', 'localhost', 'ailisc97-milestone-projectfour.herokuapp.com']
 
 
 # Application definition
