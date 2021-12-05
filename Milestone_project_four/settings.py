@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', ')a*#2pw9y-3!hf)vo&(x=#63_%j-+qs-gydj8
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['ailisc97-milestone-projectsfour', 'localhost']
 
@@ -116,7 +116,7 @@ AUTHENTICATION_BACKENDS = (
 
 SITE_ID = 1
 
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
@@ -198,7 +198,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'milestoneprojectfour@example.com'
+    DEFAULT_FROM_EMAIL = 'alioxox996@gmail.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
