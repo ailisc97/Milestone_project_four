@@ -138,7 +138,7 @@ WSGI_APPLICATION = 'Milestone_project_four.wsgi.application'
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
- DATABASES = {
+DATABASES = {
      'default': dj_database_url.parse('postgres://sycjuqmgyxujsg:77778b451d832e90ae6b4f7d1ab72b16695f466a710cbb0e7a5e5b7727a5a11f@ec2-54-155-92-75.eu-west-1.compute.amazonaws.com:5432/d8phs4uv398bc7')
     
  }
