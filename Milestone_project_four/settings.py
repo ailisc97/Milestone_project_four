@@ -15,6 +15,7 @@ import dj_database_url
 
 from django.contrib import admin
 
+os.environ["CLOUDINARY_URL"]="cloudinary://227883592642692:WcNS1ic3LXZ1pPqreQe8gTkjpeo@dsdpkjda1"
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES_DIRS = os.path.join(BASE_DIR,'templates')
@@ -26,8 +27,7 @@ TEMPLATES_DIRS = os.path.join(BASE_DIR,'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY', ')a*#2pw9y-3!hf)vo&(x=#63_%j-+qs-gydj8%mqeu9=6kv16j')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['ailisc97-milestone-projectfour', 'localhost', 'ailisc97-milestone-projectfour.herokuapp.com']
 
@@ -41,8 +41,10 @@ INSTALLED_APPS = [
     'django.forms',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'cloudinary',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -180,10 +182,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+DEFAULT_fILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Stripe
 FREE_DELIVERY_THRESHOLD = 50
