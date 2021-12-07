@@ -1,108 +1,376 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Milestone Project 4
 
-Welcome ailisc97,
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+## Table of Contents
+* [Purpose](#Purpose)
+* [User Experience Design (UX)](#User-Experience-Design)
+  * [User stories](#User-Stories)
+    * [First Time Visitor Goals](#First-Time-Visitor-Goals)
+    * [Returning Visitor Goals](#Returning-Visitor-Goals)
+    * [Frequent User Goals](#Frequent-User-Goals)
+  * [The Scope Plane](#The-Scope-Plane)
+  * [Structure](#Structure)
+  * [Design](#Design)
+    * [Colour Scheme](#Colour-Scheme)
+    * [Typography](#Typography)
+    * [Wireframes](#Wireframes)
+    * [Database Design](#Database-Design)
+    * [Security](#Security)
+* [Limitations](#Limitations)
+- [Features](#Features)
+    * [Existing Features](#Existing-Features)
+    * [Future Features](#Features-Left-to-Implement)
+* [Technologies](#Technologies)
+* [Testing](#Testing)
+    * [Test Strategy](#Test-Strategy)
+    * [Test Results](#Test-Results)
+* [Deployment](#Deployment)
+    * [Project Creation](#Project-Creation)
+    * [GitHub Pages](#Using-Github-Pages)
+    * [Locally](Run-Locally)
+    * [GitHub Pages](#Deployment-To-Heroku)
+* [Credits](#Credits)
+  * [Content](#Content)
+  * [Acknowledgements](#Acknowledgements)
+  * [Comments](#Comments)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Purpose
+This website was created for Milestone Project 4 in the Software Development Course for Code Insitute. The languages used in the project are the languages which have been thought in the course up until now, which include, HTML, CSS, JS, User Centric Design, Interactive Front End Development, Python Essential, Backend Development and Full Stack Frameworks with Django.
 
-## Gitpod Reminders
+The live website can be found on Heroku [here](https://ailisc97-milestone-projectfour.herokuapp.com/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Curran Fitness Website
 
-`python3 -m http.server`
+![Website Mockup](static/images/Capture.PNG)
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+Curran Fitness, is a website in which users can find an exercise course or even workout gear for your exciting new transformation. Users have accounts, and they have an area to write blogs about the courses or the workout gear. People can also leave comments on the blog. This project is for the Milestone Project Four which has python, backend technology, in the form of Heroku and also Full Stack Framworks with Django.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+## User Experience Design
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### User stories
+#### First Time Visitor Goals
+* As a First Time user,I want to easily and quickly navigate the website to fitness courses.
+* As a First Time user,I want to easily and quickly navigate the website to fitness equipment.
+* As a First Time user,I want to easily and quickly navigate the website to fitness clothes.
+* As a First Time user, I want to easily and quickly navigate search for different products.
+* As a First Time user, I want to easily and quickly navigate to the special offers.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### Returning Visitor Goals
+* As a Returning User, I want to see new courses and products by filters.
+* As a Returning user, I want to set up an account.
 
-------
+#### Frequent Visitor Goals
+* As a Frequent user, I want write a blog on my fitness course.
+* As a Frequent user, I want comment on other peoples blog.
 
-## Release History
+### **The Scope Plane**
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+**Features planned:**
+* Responsive design.
+* Website title and information on the site purpose.
+* Navigation Menu (Site Wide).
+* Django databases to store event information and user login/profile information.
+* Login functionality.
+* Logout functionality.
+* Account functionality.
+* Blog functionality, with creation, edit and delete management.
+* Comment functionality.
+* Stripe functionality.
+* Place Page to view all products.
+* Options on Nav bar on how to view certain products and the order to view products.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Structure
+All Pages will have a Navigation bar (using Bootstrap) at the top of the Webpage that allows the User to select resturants and to search different resturants.
+The purpose of this is to fulfill user story:
+> As a First Time user,I want to easily and quickly navigate the website to look up resturants.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+The search function for the User to search different resturants.
+> As a First Time user, I want to easily and quickly navigate serch by tags to find a resturant.
+> As a First Time user, I want to easily and quickly navigate serch by location to find a resturant.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+In the Footer there will be links to find the site links on the page.
+> As a First Time user, I want to access the site links.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+The Footer will also inform the user who are the website creators.
+>As a Returning User, I want to know who are the creators of this website.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Users who set up an account would want to add, delete and edit the page so the other users can find new and exciting resturants to visit in the future.
+>As a Returning user, I want to set up an account so I can add resturant(s) to the website.
+>As a Frequent user, I want to set up an account so I can remove resturant(s) to the website.
+>As a Frequent user, I want to set up an account so I can edit resturant(s) to the website.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Design
+#### Colour Scheme
+The background colour used is white. The nav bar and the footer are a grey in colour. The resturant card has the background in white, the words in black and a picture of the resturant.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+In the form page (signup.html), and the login page (login.html) the create restaurants (create_restaurant.html) and the edit restaurant (edit_restaurant.html) the form it's self is a white with black and a user friendly button.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The search bar is on the home page (index.html) and the resturant page (restaurants.html) there is a nice blue button to serch the restaurants,tags or city.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+####  Typography
+The font on the website is **Roboto**. This font was off Google Fonts.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+#### Wireframes
+Index.html page and Resturant Page Desktop<br>
+![Wireframe](static/images/Index&Restaurant_Desktop.jpg)<br>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Place page and Create_resturant page Desktop<br>
+![Wireframe](static/images/Place&Create_Desktop.jpg)<br>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Edit_resturant page and Delete_restaurant page Desktop<br>
+![Wireframe](static/images/Edit&Delete_Desktop.jpg)<br>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Login and Sign In Desktop<br>
+![Wireframe](static/images/Login&Signup_Desktop.jpg)<br>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Index.html page and Resturant Page Phone<br>
+![Wireframe](static/images/Index&Restaurant_Phone.jpg)<br>
 
-------
+Place page and Create_resturant page Phone<br>
+![Wireframe](static/images/Place&Create_Phone.jpg)<br>
 
-## FAQ about the uptime script
+Edit_resturant page and Delete_restaurant page Phone<br>
+![Wireframe](static/images/Edi&Delete_Phone.jpg)<br>
 
-**Why have you added this script?**
+Login and Sign In Phone<br>
+![Wireframe](static/images/Login&Signup_Phone.jpg)<br>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+#### Database Design
+MongoDB Object format examples:
 
-**How will this affect me?**
+**food: places**<br>
+{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_id: unique-value,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name: "Spicy Sals"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;city: "Dublin"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;website: "http://google.com"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;phone: "555-555-555"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tags: "spicy,cheap,clean,indian"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;added_by: "ailis"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;description: "Good restaurant, opened in 2013, best curry I've had!!"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;image: "https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/11/25/..."<br>
+&nbsp;&nbsp;&nbsp;&nbsp;view: 3<br>
+}
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+**food: users**<br>
+{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_id: unique-value,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;username: "freddie",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;password : "pbkdf2:sha256:150000$n6CiZywA$f5f4da0914672f1b47a63e0ef052473b62423ecb...",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name : "fred bloggs",<br>
+}
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+#### Security
 
-**So….?**
+Database connection details are set up in an env.py for development, for 
+security reasons this is not uploaded to GitHub so that database and connection details are not visible to 
+users. In production these are stored in Heroku. 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Limitations
+The biggest limitation I faced was the cards in the html that holds the resturants, they take any picture but sometimes the pictures are different sizes and I couldnt get them to be uniform. Its the same problem with the description some sentences are longer on some reviews then others, making the cards not uniform. 
 
-**Can I opt out?**
+City doesnt come up in some of the cards, or in some of the places.html. If I had more time id like to know why.
+ 
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Features
+ 
+### Existing Features
+The Nav bar, footer and form were all from Bootstrap.
 
-**Anything more?**
+### Features Left to Implement
+As mentioned in the limitations having the cards all a uniform size would be a very nice touch.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Technologies
+  
+* HTML
+	* This project uses HTML as the main language used for the Website.
+* CSS
+	* This project uses CSS to style the Website.
+* JavaScript
+    * This project uses JS to have the game being able to function and the sendEmail which sends me an email when someone clicks  submit on the form.
+* Python
+	* This project uses CSS to connect to the background.
+    * Python Modules used (These can be found in the requirements.txt project file):
+     * dnspython==2.0.0
+        * bcrypt==3.2.0
+        *bson==0.5.10
+        *click==8.0.1
+        *dnspython==1.16.0
+        *Flask==2.0.1
+        *Flask-PyMongo==2.3.0
+        *Flask-WTF==0.15.1
+        *gunicorn==20.1.0
+        *itsdangerous==2.0.1
+        *pymongo==3.12.0
+        *Werkzeug==2.0.1
+        *WTForms==2.3.3
+* [Mongo DB](https://getbootstrap.com/)
+	* Mongo DB stored the infromation given from the website, and saved as a database.
+* [Heroku](https://dashboard.heroku.com/)
+	* Heroku is used for the deployment of the website.
+* [Bootstrap](https://getbootstrap.com/)
+	* The Bootstrap framework is used for Navigation bar, the carousel and the contact us form.
+* [Google Fonts](https://fonts.google.com/)
+	* Google fonts are used throughout the project to import the *Roboto* font.
+* [GitPod](https://www.gitpod.io/)
+    *GitPod is used to develop the website and where the code for the website was wrote.
+* [GitHub](https://github.com/)
+	* GitHub is the site used to store the code for the Website and [Git Pages](https://pages.github.com/) is used for the deployment of the live site.
+* [Git](https://git-scm.com/)
+	* Git is used as software to commit and push code to the GitHub repository where the source code is stored.
+* [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+	* Google chromes built in developer tools are used to inspect page elements in various different sized. It also helped debug issues and test different CSS styles.
+* [Techsini](http://techsini.com/multi-mockup/index.php)
+    * tecnisih.com Multi Device Website Mockup Generator was used to create the Mock up image in this README
+* [HTML Checker](https://validator.w3.org/nu/)
+    * HTML Checker is an important website to make sure there are no errors in the HTML code.
+* [W3 CSS Validator](https://jigsaw.w3.org/css-validator/validator)
+    * CSS Checker is an important website to make sure there are no errors in the CSS code.
+* [JSHint](https://jshint.com/)
+    * JS Checker is an important website to make sure there are no errors in the JS code.
+* [Python syntax checker](http://pep8online.com/)
+    * Python Checker is an important website to make sure there are no errors in the JS code.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+## Testing
 
----
+### Test Strategy
+#### **Summary**
+Testing is required on all features and user stories documented in this README. 
+All clickable links must redirect to the correct pages. All forms linked to MongoDB
+must be tested to ensure they insert all given fields into the correct collections.
 
-Happy coding!
+HTML Code must pass through the [W3C HTML Validator](https://validator.w3.org/#validate_by_uri).
+
+CSS Code must pass through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
+
+JavaScript code must pass through the [JSHint Validator](https://jshint.com/).
+
+Python Code must pass through [PEP8 Validator](http://pep8online.com/)
+
+All Code passed through the validator.
+
+#### **High Level Test Cases**
+![Test Cases](static/images/TestCases.xlsx)
+
+#### **Access Requirements**
+Tester must have access to MongoDB in order to manually verify the insertion 
+of records to users and events collections.
+
+#### **Regression Testing**
+All features previous tested during development in a local environment must be regression 
+tested in production on the live website.
+
+#### **Assumptions and Dependencies**
+Testing is dependent on the website being deployed live on Heroku.
+
+
+### Test Results
+
+Full test results can be found [here](static/images/TestCases.xlsx)
+
+****
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+## Deployment
+
+### Project Creation
+To create this project I used the CI Gitpod Full Template by navigating 
+[here](https://github.com/Code-Institute-Org/gitpod-full-template) and clicking the 'Use this template' button.
+
+I was then directed to the create new repository from template page and entered in my desired repo name, then 
+clicked Create repository from template button.
+
+Once created, I navigated to my new repository on GitHub and clicked the Gitpod button which built my workspace.
+
+* git add . -This would add all the work from the different pages to the GitHub.
+* git add index.html -Would only save the work from Index.html
+* git pull - This would pull the GitHub version of my project.
+* git commit -m "MESSAGE" - This would commit the added work from git add . and leave a message beside it.
+* git push- This pushed the added work to GitHub
+* python3 -m http.server - This opened the website on the right hand side of the page.
+
+
+### Using Github Pages
+1. On the GitHub [Repository:](https://github.com/ailisc97/Project_Milestone_3)
+1. Click the 'Settings' Tab on the right hand side.
+1. Click on options.
+1. Scroll Down to the Git Hub Pages Heading.
+1. Select 'main' as the source.
+1. Click the Save button.
+1. Click on the link to go to the deployed page
+
+### Run Locally
+**Note: The project will not run locally with database connections unless the user sets up an [env.py](https://pypi.org/project/env.py/) file configuring IP, PORT, 
+MONGO_URI, MONGO_DBNAME and SECRET_KEY. You must have the connection details in order to do this. These details are private and not disclosed in this repository 
+for security purposes.**
+1. On the GitHub [Repository:](https://github.com/ailisc97/Project_Milestone_3)
+1. Click on the download code button, you will get options to clone the GitHub Repository or Download the Zip file.
+1. If you downloaded the zip file open the file using one of your IDE application.
+1. Or if you choice to clone the GitHub Repository, then open up a terminal and get to a directory of your choice then type in "git clone" followed by the GitHub Repository URL.
+1. The clone will be created on your loacal machine. 
+
+Once the project has been loaded into an IDE of choice, run the following command in the shell to install all the required packages:
+> pip install -r requirements.txt
+
+
+URL to deployed Heroku [here](https://resturant-places.herokuapp.com/home)
+
+### Deployment to Heroku
+
+**Create application:**
+1. Navigate to Heroku.com and login.
+1. Click on the new button.
+1. Select create new app.
+1. Enter the app name.
+1. Select region.
+
+**Set up connection to Github Repository:**
+
+1. Click the deploy tab and select GitHub - Connect to GitHub.
+1. A prompt to find a github repository to connect to will then be displayed.
+1. Enter the repository name for the project and click search.
+1. Once the repo has been found, click the connect button.
+
+**Set environment variables:**
+
+Click the settings tab and then click the Reveal Config Vars button and add the following:
+
+1. key: IP, value: 0.0.0.0
+2. key: PORT, value: 5000
+3. key: MONGO_DBNAME, value: (database name you want to connect to)
+4. key: MONGO_URI, value: (mongo uri - This can be found in MongoDB by going to clusters > connect > connect to your application and substituting the password and 
+    dbname that you set up in the link).
+5. key: SECRET_KEY, value: (This is a custom secret key set up for configuration to keep client-side sessions secure).
+
+**Enable automatic deployment:**
+1. Click the Deploy tab
+1. In the Automatic deploys section, choose the branch you want to deploy from then click Enable Automation Deploys.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+## Credits
+
+### Code
+Code for the Navigation bar and the footer was taken from [Bootstrap](https://getbootstrap.com/).
+
+I took insperation from the mini project which was completed with the college. <br>
+
+### Content
+Content was created by Ailis Curran.
+
+### Acknowledgements
+I would like to thank my mentor Spencer Barriball for all his help throughout the project.
+
+### Comments
+README.md insperation was taken from my previous Milestone Project. It gave me a template to complete my README, all README content is my own.
