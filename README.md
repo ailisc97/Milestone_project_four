@@ -60,8 +60,6 @@ Curran Fitness, is a website in which users can find an exercise course or even 
 * As a First Time user, I want to easily and quickly navigate search for different products.
 * As a First Time user, I want to easily and quickly navigate to the special offers.
 
-
-
 #### Returning Visitor Goals
 * As a Returning User, I want to see new courses and products by filters.
 * As a Returning user, I want to set up an account.
@@ -80,42 +78,37 @@ Curran Fitness, is a website in which users can find an exercise course or even 
 * Login functionality.
 * Logout functionality.
 * Account functionality.
-* Blog functionality, with creation, edit and delete management.
+* Blog functionality.
 * Comment functionality.
 * Stripe functionality.
 * Place Page to view all products.
 * Options on Nav bar on how to view certain products and the order to view products.
 
 ### Structure
-All Pages will have a Navigation bar (using Bootstrap) at the top of the Webpage that allows the User to select resturants and to search different resturants.
+All Pages will have a Navigation bar (using Bootstrap) at the top of the Webpage that allows the User to select different products, by certain categories and to search different products.
 The purpose of this is to fulfill user story:
-> As a First Time user,I want to easily and quickly navigate the website to look up resturants.
+> As a First Time user,I want to easily and quickly navigate the website to fitness courses.
+> As a First Time user,I want to easily and quickly navigate the website to fitness equipment.
+> As a First Time user,I want to easily and quickly navigate the website to fitness clothes.
 
-The search function for the User to search different resturants.
-> As a First Time user, I want to easily and quickly navigate serch by tags to find a resturant.
-> As a First Time user, I want to easily and quickly navigate serch by location to find a resturant.
+The search function for the User to search different products.
+> As a First Time user, I want to easily and quickly navigate search for different products.
+> As a Returning User, I want to see new courses and products by filters.
 
-In the Footer there will be links to find the site links on the page.
-> As a First Time user, I want to access the site links.
-
-The Footer will also inform the user who are the website creators.
->As a Returning User, I want to know who are the creators of this website.
-
-Users who set up an account would want to add, delete and edit the page so the other users can find new and exciting resturants to visit in the future.
->As a Returning user, I want to set up an account so I can add resturant(s) to the website.
->As a Frequent user, I want to set up an account so I can remove resturant(s) to the website.
->As a Frequent user, I want to set up an account so I can edit resturant(s) to the website.
+Users who set up an account would want search the blog and the comments for reviews on the products.
+> As a Frequent user, I want write a blog on my fitness course.
+> As a Frequent user, I want comment on other peoples blog.
 
 ### Design
 #### Colour Scheme
-The background colour used is white. The nav bar and the footer are a grey in colour. The resturant card has the background in white, the words in black and a picture of the resturant.
+The background colour used is white. The home page has a girl doing yoga with an interactive button to check out the products. Each product has a picture of the what is sold, or in terms of the courses its a photo in relation to the course. 
 
-In the form page (signup.html), and the login page (login.html) the create restaurants (create_restaurant.html) and the edit restaurant (edit_restaurant.html) the form it's self is a white with black and a user friendly button.
+In the blog page (blog.html), the comments page (blog_detail.html), the signup (account_signup) and the login(account_login) the form it's self is a white with black and a user friendly button.
 
-The search bar is on the home page (index.html) and the resturant page (restaurants.html) there is a nice blue button to serch the restaurants,tags or city.
+The search bar is in the nav bar (base.html) there is an icon to press to search.
 
 ####  Typography
-The font on the website is **Roboto**. This font was off Google Fonts.
+The font on the website is **Lato**. This font was off Google Fonts.
 
 #### Wireframes
 Index.html page and Resturant Page Desktop<br>
@@ -144,30 +137,13 @@ Login and Sign In Phone<br>
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 #### Database Design
-MongoDB Object format examples:
+The database being used to store all products and customer information is built into Django and can be accessed by the site administrators by typing "/admin" at the end of the web address.
 
-**food: places**<br>
-{<br>
-&nbsp;&nbsp;&nbsp;&nbsp;_id: unique-value,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;name: "Spicy Sals"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;city: "Dublin"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;website: "http://google.com"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;phone: "555-555-555"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;tags: "spicy,cheap,clean,indian"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;added_by: "ailis"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;description: "Good restaurant, opened in 2013, best curry I've had!!"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;image: "https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/11/25/..."<br>
-&nbsp;&nbsp;&nbsp;&nbsp;view: 3<br>
-}
+To deploy to Heroku I used the Postgres free package. Heroku Postgres is a managed SQL database service provided directly by Heroku. You can access a Heroku Postgres database from any language with a PostgreSQL driver, including all languages officially supported by Heroku. In addition to a variety of management commands available via the Heroku CLI, Heroku Postgres provides a web dashboard, the ability to share queries with dataclips, and several other helpful features. See more information on Postgres [here](https://devcenter.heroku.com/articles/heroku-postgresql)
+
+Here are screenshots of what it looks like:
 
 
-**food: users**<br>
-{<br>
-&nbsp;&nbsp;&nbsp;&nbsp;_id: unique-value,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;username: "freddie",<br>
-&nbsp;&nbsp;&nbsp;&nbsp;password : "pbkdf2:sha256:150000$n6CiZywA$f5f4da0914672f1b47a63e0ef052473b62423ecb...",<br>
-&nbsp;&nbsp;&nbsp;&nbsp;name : "fred bloggs",<br>
-}
 
 #### Security
 
@@ -177,10 +153,7 @@ users. In production these are stored in Heroku.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 ### Limitations
-The biggest limitation I faced was the cards in the html that holds the resturants, they take any picture but sometimes the pictures are different sizes and I couldnt get them to be uniform. Its the same problem with the description some sentences are longer on some reviews then others, making the cards not uniform. 
-
-City doesnt come up in some of the cards, or in some of the places.html. If I had more time id like to know why.
- 
+The biggest limitation I faced was that the photos of the products were not loading onto Heroku, I could get the home page photo but none of the product photos would show. To get the photos onto the website I needed to use Cloudinary, this caused a load of issues for me. I needed a lot of help from the tutor suport and with Heroku being down for a day aswell it took quite a long time. 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -190,7 +163,7 @@ City doesnt come up in some of the cards, or in some of the places.html. If I ha
 The Nav bar, footer and form were all from Bootstrap.
 
 ### Features Left to Implement
-As mentioned in the limitations having the cards all a uniform size would be a very nice touch.
+
 
 ## Technologies
   
@@ -203,23 +176,27 @@ As mentioned in the limitations having the cards all a uniform size would be a v
 * Python
 	* This project uses CSS to connect to the background.
     * Python Modules used (These can be found in the requirements.txt project file):
-     * dnspython==2.0.0
-        * bcrypt==3.2.0
-        *bson==0.5.10
-        *click==8.0.1
-        *dnspython==1.16.0
-        *Flask==2.0.1
-        *Flask-PyMongo==2.3.0
-        *Flask-WTF==0.15.1
-        *gunicorn==20.1.0
-        *itsdangerous==2.0.1
-        *pymongo==3.12.0
-        *Werkzeug==2.0.1
-        *WTForms==2.3.3
-* [Mongo DB](https://getbootstrap.com/)
-	* Mongo DB stored the infromation given from the website, and saved as a database.
+        * asgiref==3.4.1
+        * cloudinary==1.28.0
+        * dj-database-url==0.5.0
+        * dj3-cloudinary-storage==0.0.6
+        * Django==3.2.9
+        * django-allauth==0.41.0
+        * django-countries==7.2.1
+        * django-crispy-forms==1.13.0
+        * gunicorn==20.1.0
+        * oauthlib==3.1.1
+        * Pillow==8.4.0
+        * psycopg2==2.9.2
+        * python3-openid==3.2.0
+        * pytz==2021.3
+        * requests-oauthlib==1.3.0
+        * sqlparse==0.4.2
+        * stripe==2.63.0
 * [Heroku](https://dashboard.heroku.com/)
 	* Heroku is used for the deployment of the website.
+* [Cloudinary](https://cloudinary.com)
+    * Cloudinary is used to upload the images to Heroku.
 * [Bootstrap](https://getbootstrap.com/)
 	* The Bootstrap framework is used for Navigation bar, the carousel and the contact us form.
 * [Google Fonts](https://fonts.google.com/)
