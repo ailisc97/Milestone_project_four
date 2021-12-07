@@ -27,7 +27,8 @@ TEMPLATES_DIRS = os.path.join(BASE_DIR,'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY', ')a*#2pw9y-3!hf)vo&(x=#63_%j-+qs-gydj8%mqeu9=6kv16j')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = ['ailisc97-milestone-projectfour', 'localhost', 'ailisc97-milestone-projectfour.herokuapp.com']
 
@@ -61,7 +62,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -140,9 +140,9 @@ WSGI_APPLICATION = 'Milestone_project_four.wsgi.application'
 #     }
 # }
 DATABASES = {
-     'default': dj_database_url.parse('postgres://sycjuqmgyxujsg:77778b451d832e90ae6b4f7d1ab72b16695f466a710cbb0e7a5e5b7727a5a11f@ec2-54-155-92-75.eu-west-1.compute.amazonaws.com:5432/d8phs4uv398bc7')
-    
- }
+    'default': dj_database_url.parse('postgres://sycjuqmgyxujsg:77778b451d832e90ae6b4f7d1ab72b16695f466a710cbb0e7a5e5b7727a5a11f@ec2-54-155-92-75.eu-west-1.compute.amazonaws.com:5432/d8phs4uv398bc7')
+
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
