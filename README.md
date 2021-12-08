@@ -225,8 +225,7 @@ The Nav bar, footer and form were all from Bootstrap.
 ### Test Strategy
 #### **Summary**
 Testing is required on all features and user stories documented in this README. 
-All clickable links must redirect to the correct pages. All forms linked to MongoDB
-must be tested to ensure they insert all given fields into the correct collections.
+All clickable links must redirect to the correct pages. 
 
 HTML Code must pass through the [W3C HTML Validator](https://validator.w3.org/#validate_by_uri).
 
