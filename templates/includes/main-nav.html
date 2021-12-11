@@ -11,9 +11,9 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="classes-link">
                 <a href="{% url 'products' %}?category=yoga" class="dropdown-item">Yoga</a>
-                <a href="{% url 'products' %}?category=pilates" class="dropdown-item ">Pilates</a>
+                <a href="{% url 'products' %}?category=core" class="dropdown-item ">Core</a>
                 <a href="{% url 'products' %}?category=kickbox" class="dropdown-item ">Kick Boxing</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Classes</a>
+                <a href="{% url 'products' %}?category=yoga,core,kickbox" class="dropdown-item">All Classes</a>
             </div>
         </li>
        
