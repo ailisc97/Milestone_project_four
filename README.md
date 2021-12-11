@@ -139,11 +139,14 @@ Login and Sign In Phone<br>
 #### Database Design
 The database being used to store all products and customer information is built into Django and can be accessed by the site administrators by typing "/admin" at the end of the web address.
 
-To deploy to Heroku I used the Postgres free package. Heroku Postgres is a managed SQL database service provided directly by Heroku. You can access a Heroku Postgres database from any language with a PostgreSQL driver, including all languages officially supported by Heroku. In addition to a variety of management commands available via the Heroku CLI, Heroku Postgres provides a web dashboard, the ability to share queries with dataclips, and several other helpful features. See more information on Postgres [here](https://devcenter.heroku.com/articles/heroku-postgresql)
-
 Here are screenshots of what it looks like:
 
+<img src="media/readme/Django.PNG" style="margin: 0;">
+<img src="media/readme/Django1.PNG" style="margin: 0;">
 
+To deploy to Heroku I used the Postgres free package. Heroku Postgres is a managed SQL database service provided directly by Heroku. You can access a Heroku Postgres database from any language with a PostgreSQL driver, including all languages officially supported by Heroku. In addition to a variety of management commands available via the Heroku CLI, Heroku Postgres provides a web dashboard, the ability to share queries with dataclips, and several other helpful features. See more information on Postgres [here](https://devcenter.heroku.com/articles/heroku-postgresql)
+
+<img src="media/readme/Heroku.PNG" style="margin: 0;">
 
 #### Security
 
