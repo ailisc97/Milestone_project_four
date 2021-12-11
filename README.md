@@ -244,7 +244,7 @@ All Code passed through the validator.
 ![Test Cases](static/images/TestCases.xlsx)
 
 #### **Access Requirements**
-Tester must have access to MongoDB in order to manually verify the insertion 
+Tester must have access to Heroku and the SuperUser account in order to manually verify the insertion 
 of records to users and events collections.
 
 #### **Regression Testing**
