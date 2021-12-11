@@ -292,9 +292,9 @@ Once created, I navigated to my new repository on GitHub and clicked the Gitpod 
 
 ### Run Locally
 **Note: The project will not run locally with database connections unless the user sets up an [env.py](https://pypi.org/project/env.py/) file configuring IP, PORT, 
-HEROKU_URI, MONGO_DBNAME and SECRET_KEY. You must have the connection details in order to do this. These details are private and not disclosed in this repository 
+STRIPE_WH_SECRET, STRIPE_SECRET_KEY, SECRET_KEY, DATABASE_URL, CLOUDINARY_URL and STRIPE_PUBLIC_KEY. You must have the connection details in order to do this. These details are private and not disclosed in this repository 
 for security purposes.**
-1. On the GitHub [Repository:](https://github.com/ailisc97/Project_Milestone_3)
+1. On the GitHub [Repository:](https://github.com/ailisc97/Milestone_project_four)
 1. Click on the download code button, you will get options to clone the GitHub Repository or Download the Zip file.
 1. If you downloaded the zip file open the file using one of your IDE application.
 1. Or if you choice to clone the GitHub Repository, then open up a terminal and get to a directory of your choice then type in "git clone" followed by the GitHub Repository URL.
@@ -304,7 +304,7 @@ Once the project has been loaded into an IDE of choice, run the following comman
 > pip install -r requirements.txt
 
 
-URL to deployed Heroku [here](https://resturant-places.herokuapp.com/home)
+URL to deployed Heroku [here](https://ailisc97-milestone-projectfour.herokuapp.com/)
 
 ### Deployment to Heroku
 
@@ -315,6 +315,28 @@ URL to deployed Heroku [here](https://resturant-places.herokuapp.com/home)
 1. Enter the app name.
 1. Select region.
 
+Before creating a Heroku application there are some files that need to be created to run the app:
+
+requirements.txt file (which lists the dependencies that are needed for the app)
+Procfile (this is what Heroku looks for to know which file runs the app, and how to run it)
+
+pip3 freeze --local > requirements.txt
+echo web: python app.py > Procfile
+
+At Heroku.com you can choose to 'Create a New App' - the name must be unique, in lowercase letters and use dashes instead of spaces.
+
+Next, select the region closest (doesn't have to be exact - I chose Europe) to you then click 'Create App'.
+For this project I chose to setup 'Automatic Deployment' from my GitHub repository.
+Make sure your GitHub profile is displayed, then add your repository name then click 'Search'. Once it finds your repo, click to connect to this app.
+DON'T click to Enable Automatic Deployment yet, otherwise you'll get unwanted application errors.
+Since environment variables are within a hidden env.py file, Heroku won't be able to read those variables. Click on the 'Settings' tab for your app, and then click on 'Reveal Config Vars', where we can securely tell Heroku which variables are required. Must match the details in the env.py file you have to create in github.
+
+Make sure all changes on GitHub have been added, commited and pushed to GitHub.
+We can now safely 'Enable Automatic Deployment', as everything should be available on our repository.
+Click 'Deploy Branch'. Heroku will now receive the code from GitHub, and start building the app using the required packages.
+When this is completed it will state: "Your app was successfully deployed."
+Click "View" to launch your new app.
+
 **Set up connection to Github Repository:**
 
 1. Click the deploy tab and select GitHub - Connect to GitHub.
@@ -324,14 +346,15 @@ URL to deployed Heroku [here](https://resturant-places.herokuapp.com/home)
 
 **Set environment variables:**
 
-Click the settings tab and then click the Reveal Config Vars button and add the following:
+Create a file called env.py for the environment variables, containing:
 
-1. key: IP, value: 0.0.0.0
-2. key: PORT, value: 5000
-3. key: MONGO_DBNAME, value: (database name you want to connect to)
-4. key: MONGO_URI, value: (mongo uri - This can be found in MongoDB by going to clusters > connect > connect to your application and substituting the password and 
-    dbname that you set up in the link).
-5. key: SECRET_KEY, value: (This is a custom secret key set up for configuration to keep client-side sessions secure).
+import os
+
+os.environ.setdefault("IP", "0.0.0.0")
+os.environ.setdefault("PORT", "5000")
+os.environ.setdefault("SECRET_KEY", "<app secret key>")
+os.environ.setdefault("MONGO_URI", "mongodb+srv://<username>:<password>@<cluster_name>-ofgqg.mongodb.net/<database_name>?retryWrites=true&w=majority")
+os.environ.setdefault("MONGO_DBNAME", "<database name>")
 
 **Enable automatic deployment:**
 1. Click the Deploy tab
