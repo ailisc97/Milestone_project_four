@@ -241,7 +241,7 @@ Python Code must pass through [PEP8 Validator](http://pep8online.com/)
 All Code passed through the validator.
 
 #### **High Level Test Cases**
-![Test Cases](static/images/TestCases.xlsx)
+![Test Cases](media/readme/TestCases.xlsx)
 
 #### **Access Requirements**
 Tester must have access to Heroku and the SuperUser account in order to manually verify the insertion 
@@ -257,7 +257,7 @@ Testing is dependent on the website being deployed live on Heroku.
 
 ### Test Results
 
-Full test results can be found [here](static/images/TestCases.xlsx)
+Full test results can be found [here](media/readme/TestCases.xlsx)
 
 ****
 
@@ -282,7 +282,7 @@ Once created, I navigated to my new repository on GitHub and clicked the Gitpod 
 
 
 ### Using Github Pages
-1. On the GitHub [Repository:](https://github.com/ailisc97/Project_Milestone_3)
+1. On the GitHub [Repository:](https://github.com/ailisc97/Milestone_project_four)
 1. Click the 'Settings' Tab on the right hand side.
 1. Click on options.
 1. Scroll Down to the Git Hub Pages Heading.
@@ -292,7 +292,7 @@ Once created, I navigated to my new repository on GitHub and clicked the Gitpod 
 
 ### Run Locally
 **Note: The project will not run locally with database connections unless the user sets up an [env.py](https://pypi.org/project/env.py/) file configuring IP, PORT, 
-MONGO_URI, MONGO_DBNAME and SECRET_KEY. You must have the connection details in order to do this. These details are private and not disclosed in this repository 
+HEROKU_URI, MONGO_DBNAME and SECRET_KEY. You must have the connection details in order to do this. These details are private and not disclosed in this repository 
 for security purposes.**
 1. On the GitHub [Repository:](https://github.com/ailisc97/Project_Milestone_3)
 1. Click on the download code button, you will get options to clone the GitHub Repository or Download the Zip file.
