@@ -32,7 +32,6 @@ X_FRAME_OPTIONS = "SAMEORIGIN"
 
 ALLOWED_HOSTS = ['ailisc97-milestone-projectfour', 'localhost', 'ailisc97-milestone-projectfour.herokuapp.com']
 
-
 # Application definition
 
 INSTALLED_APPS = [
