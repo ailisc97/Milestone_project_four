@@ -42,7 +42,7 @@ The live website can be found on Heroku [here](https://ailisc97-milestone-projec
 
 ## Curran Fitness Website
 
-![Website Mockup](static/images/Capture.PNG)
+![Website Mockup](media/readme/Capture.PNG)
 
 
 Curran Fitness, is a website in which users can find an exercise course or even workout gear for your exciting new transformation. Users have accounts, and they have an area to write blogs about the courses or the workout gear. People can also leave comments on the blog. This project is for the Milestone Project Four which has python, backend technology, in the form of Heroku and also Full Stack Framworks with Django.
@@ -65,7 +65,6 @@ Curran Fitness, is a website in which users can find an exercise course or even 
 * As a Returning user, I want to set up an account.
 
 #### Frequent Visitor Goals
-* As a Frequent user, I want write a blog on my fitness course.
 * As a Frequent user, I want comment on other peoples blog.
 
 ### **The Scope Plane**
@@ -96,7 +95,6 @@ The search function for the User to search different products.
 > As a Returning User, I want to see new courses and products by filters.
 
 Users who set up an account would want search the blog and the comments for reviews on the products.
-> As a Frequent user, I want write a blog on my fitness course.
 > As a Frequent user, I want comment on other peoples blog.
 
 ### Design
@@ -111,29 +109,14 @@ The search bar is in the nav bar (base.html) there is an icon to press to search
 The font on the website is **Lato**. This font was off Google Fonts.
 
 #### Wireframes
-Index.html page and Resturant Page Desktop<br>
-![Wireframe](static/images/Index&Restaurant_Desktop.jpg)<br>
+Home page and Products Page Desktop<br>
+![Wireframe](media/readme/Wireframes1.jpg)<br>
 
-Place page and Create_resturant page Desktop<br>
-![Wireframe](static/images/Place&Create_Desktop.jpg)<br>
+Blog page and Comments page Desktop<br>
+![Wireframe](media/readme/Wireframes3.jpg)<br>
 
-Edit_resturant page and Delete_restaurant page Desktop<br>
-![Wireframe](static/images/Edit&Delete_Desktop.jpg)<br>
-
-Login and Sign In Desktop<br>
-![Wireframe](static/images/Login&Signup_Desktop.jpg)<br>
-
-Index.html page and Resturant Page Phone<br>
-![Wireframe](static/images/Index&Restaurant_Phone.jpg)<br>
-
-Place page and Create_resturant page Phone<br>
-![Wireframe](static/images/Place&Create_Phone.jpg)<br>
-
-Edit_resturant page and Delete_restaurant page Phone<br>
-![Wireframe](static/images/Edi&Delete_Phone.jpg)<br>
-
-Login and Sign In Phone<br>
-![Wireframe](static/images/Login&Signup_Phone.jpg)<br>
+Checkout page and My Profile page Desktop<br>
+![Wireframe](media/readme/Wireframes3.jpg)<br>
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 #### Database Design
@@ -158,6 +141,8 @@ users. In production these are stored in Heroku.
 ### Limitations
 The biggest limitation I faced was that the photos of the products were not loading onto Heroku, I could get the home page photo but none of the product photos would show. To get the photos onto the website I needed to use Cloudinary, this caused a load of issues for me. I needed a lot of help from the tutor suport and with Heroku being down for a day aswell it took quite a long time. 
 
+I also would have liked to have had the blog feature so that anyone could write a blog for the website.
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 ## Features
@@ -166,7 +151,7 @@ The biggest limitation I faced was that the photos of the products were not load
 The Nav bar, footer and form were all from Bootstrap.
 
 ### Features Left to Implement
-
+I would have liked to have a feature for customers who have logged in to write a blog on the site, not throught the django admin side.
 
 ## Technologies
   
@@ -190,7 +175,7 @@ The Nav bar, footer and form were all from Bootstrap.
         * gunicorn==20.1.0
         * oauthlib==3.1.1
         * Pillow==8.4.0
-        * psycopg2==2.9.2
+        * psycopg2-binary==2.9.2
         * python3-openid==3.2.0
         * pytz==2021.3
         * requests-oauthlib==1.3.0
@@ -274,7 +259,7 @@ clicked Create repository from template button.
 Once created, I navigated to my new repository on GitHub and clicked the Gitpod button which built my workspace.
 
 * git add . -This would add all the work from the different pages to the GitHub.
-* git add index.html -Would only save the work from Index.html
+* git add base.css -Would only save the work from Index.html
 * git pull - This would pull the GitHub version of my project.
 * git commit -m "MESSAGE" - This would commit the added work from git add . and leave a message beside it.
 * git push- This pushed the added work to GitHub
@@ -294,6 +279,7 @@ Once created, I navigated to my new repository on GitHub and clicked the Gitpod 
 **Note: The project will not run locally with database connections unless the user sets up an [env.py](https://pypi.org/project/env.py/) file configuring IP, PORT, 
 STRIPE_WH_SECRET, STRIPE_SECRET_KEY, SECRET_KEY, DATABASE_URL, CLOUDINARY_URL and STRIPE_PUBLIC_KEY. You must have the connection details in order to do this. These details are private and not disclosed in this repository 
 for security purposes.**
+
 1. On the GitHub [Repository:](https://github.com/ailisc97/Milestone_project_four)
 1. Click on the download code button, you will get options to clone the GitHub Repository or Download the Zip file.
 1. If you downloaded the zip file open the file using one of your IDE application.
@@ -343,18 +329,6 @@ Click "View" to launch your new app.
 1. A prompt to find a github repository to connect to will then be displayed.
 1. Enter the repository name for the project and click search.
 1. Once the repo has been found, click the connect button.
-
-**Set environment variables:**
-
-Create a file called env.py for the environment variables, containing:
-
-import os
-
-os.environ.setdefault("IP", "0.0.0.0")
-os.environ.setdefault("PORT", "5000")
-os.environ.setdefault("SECRET_KEY", "<app secret key>")
-os.environ.setdefault("MONGO_URI", "mongodb+srv://<username>:<password>@<cluster_name>-ofgqg.mongodb.net/<database_name>?retryWrites=true&w=majority")
-os.environ.setdefault("MONGO_DBNAME", "<database name>")
 
 **Enable automatic deployment:**
 1. Click the Deploy tab
