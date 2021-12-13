@@ -18,6 +18,8 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+handler404 = 'my_app.views.handler404'
+handler500 = 'my_app.views.handler500'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,6 +30,4 @@ urlpatterns = [
     path('checkout/', include('checkout.urls')),
     path('profile/', include('profiles.urls')),
     path('blog/', include('blog.urls')),
-    handler404 = 'my_app.views.handler404',
-    handler500 = 'my_app.views.handler500',
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
