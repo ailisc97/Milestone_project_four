@@ -113,10 +113,10 @@ Home page and Products Page Desktop<br>
 ![Wireframe](media/readme/Wireframes1.jpg)<br>
 
 Blog page and Comments page Desktop<br>
-![Wireframe](media/readme/Wireframes3.jpg)<br>
+![Wireframe](media/readme/Wireframe3.jpg)<br>
 
 Checkout page and My Profile page Desktop<br>
-![Wireframe](media/readme/Wireframes3.jpg)<br>
+![Wireframe](media/readme/Wireframe4.jpg)<br>
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 #### Database Design
@@ -229,12 +229,10 @@ All Code passed through the validator.
 ![Test Cases](media/readme/TestCases.xlsx)
 
 #### **Access Requirements**
-Tester must have access to Heroku and the SuperUser account in order to manually verify the insertion 
-of records to users and events collections.
+Tester must have access to Heroku and the SuperUser account in order to manually verify the insertion of records to users and events collections.
 
 #### **Regression Testing**
-All features previous tested during development in a local environment must be regression 
-tested in production on the live website.
+All features previous tested during development in a local environment must be regression tested in production on the live website.
 
 #### **Assumptions and Dependencies**
 Testing is dependent on the website being deployed live on Heroku.
